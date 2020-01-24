@@ -1,226 +1,235 @@
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous|Share+Tech+Mono&display=swap" rel="stylesheet">
 
 <style type="text/css">
+
+/*SCROLLBAR*/
+::-webkit-scrollbar-thumb {
+height:auto;
+background-color:#94C1FF;
+}
+ 
+::-webkit-scrollbar {
+height:9px;
+width:2px;
+background-color:#D7E9FF;
+} 
 
 /*GENERAL*/
 
 body {
-	background:##E5E5E5;
 	color: #3c393f; 
+	background-color:#e8e1e1;
 }
 
-#bgx img{
-	position: absolute;
-	width: 31px;
-	height: 31px;
-	left: 425.49px;
-	top: 218px;
+
+/*SIDEBAR*/
+
+#star {
+	position:fixed;
+	margin-left:800px;
+	margin-top:300px;
 }
 
-#bgo img{ 
-	position: absolute;
-	width: 36px;
-	height: 36px;
-	left: 570px;
-	top: 662px;
+#space {
+	position:fixed;
+	margin-left:50px;
+	z-index:-11;
+	margin-top:-50px;
 }
 
-#bgt img{ 
-	position: absolute;
-	width: 44.99px;
-	height: 44.99px;
-	left: 862.46px;
-	top: 139px;
+#sidebar {
+	margin-left:200px;
+	margin-top:100px;
 }
 
-#bgz img{ 
-	position: absolute;
-	width: 52px;
-	left: 1354px;
-	top: 657.24px;
-}
-
-#bgs img{ 
-	position: absolute;
-	width: 35.69px;
-	height: 35.69px;
-	left: 15.91px;
-	top: 424px;
-}
-
-/*HEADER*/
-
-#header {
-	margin-left:80px;
-	margin-top:25px;
-	width:100%;
-}
-
-#header img {
-	width:100px;
+#sidebar img {
+	z-index:1;
+	margin-left:3px;
 }
 
 .links {
-	position: absolute;
-	width: 578px;
-	height: 22px;
-	left: 65%;
-	top: 80px;
-	position:absolute;
-}
-
-.links a {
-	font-family: Open Sans;
-	text-decoration:none;
-	font-size: 16px;
-	line-height: 22px;
-	color: #3C393F;
-	margin-right:5%;
-}
-
-.links a:first-child{
-	border-bottom: 3px solid #BC3456;
-	padding:5px;​ 
-}
-
-
-/*UPCOMING*/
-
-#entries {
-	position: absolute;
-	width: 539px;
-	height: 466px;
-	margin-left: 80px;
-	margin-top: 80px;
-
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 14px;
-	line-height: 19px;
-
-	color: #3C393F;
-}
-
-#entries h1 {
-	font-family: PT Sans Narrow;
-	font-size: 16px;
-	font-weight:normal;
-	line-height: 19px;
-
-	color: #BB3556;	
-}
-
-#entries h2 {
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 28px;
-	line-height: 38px;
-
-	color: #3C393F;
-}
-
-#entries button {
-	width: 150px;
-	margin-top:5px;
-
-	background: #BB3556;
-	border-radius: 15px;
-	border: none;
-
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 14px;
-	line-height: 19px;
 	text-align:center;
-	padding: 5px;
+}
+
+#sidebar a {
+	background-color:#ffa95f;
+	padding:5px;
+	display:inline-block;
+	border-radius:5px;
+	width:15px;
+	text-align:center;
+	color:white;
+}
+
+.desc {
+	border: solid 3px #ffa95f;
+	width:200px;
+	margin-top:-3px;
+	z-index:2;
+	background:#ffc269;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding:10px;
+	font-family:arial;
+	font-size:13px;
+	letter-spacing:-1px;
+	text-align:justify;
+	overflow:auto;
+	height:300px;
+	text-transform:lowercase;
+
+}
+
+.title {
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	border: solid 3px #ffa95f;
+	font-family: 'Righteous', cursive;
+	font-size:20px;
+	color:white;
+	width:200px;
+	padding:10px;
+	background:#ff8086;	
+	margin-top:-18px;
+}
+	
+/*TOPBAR*/
+
+#topbar {
+	width:489px;
+	background:#ffa95f;
+	position:fixed;
+	color:white;
+	font-family:arial;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:8px;
+	line-height:13px;
+	height:13px;
+	padding:5px;
+	letter-spacing:4px;
+	margin-left:425px;
+	padding-left:10px;
+	text-align:center;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+}
+
+#topbar a {
+	text-decoration:none;
+	padding:2px;
+	color:white;
+	margin-left:30px;
+}
+
+#topbar a:hover {
+	background:#ff8086;
+}
+
+/*CONTENT*/
+
+#content {
+	width:500px;
+	height:374px;
+	position:fixed;
+	color:black;
+	border: solid 3px #ffa95f;
+	margin-left:423px;
+	margin-top:-380px;
+	overflow:auto;
+	background-color:#c3ddff;
+}
+
+#content h1 {
+	font-family: 'Righteous', cursive;
+	font-size:20px;
+	color:#ff8086;
+	padding:10px;
+	margin-left:10px;
+}
+
+.samples {
+	margin-top:10px;
+}
+
+.samples img {
+	width:200px;
+	-webkit-filter: grayscale(50%);
+	border-radius:5px;
+}
+
+.samples table {
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.samples td {
+	box-shadow: 5px 5px #ff8086;
+	background-color:#ffc269;
+	display:inline-block;
+	padding:10px;
+	border: solid 1px white;
+	width:200px;
+	border-radius:5px;	
+	height:135px;
 	margin-right:10px;
+	text-align:center;
+	margin-bottom:10px;
 }
 
-#entries button a {
-	text-decoration:none;
-	color: #FFFFFF;
+.samples h2 {
+	color:#ff8086;
+	font-size:12px;
+	font-weight:bold;
+	font-family: 'Righteous', cursive;
+	text-transform:uppercase;
 }
 
-/*PROMO MEDIA*/
-
-#promotion {
-	position: absolute;
-	width: 701px;
-	height: 394px;
-	left: 659px;
-	top: 250px;
-}
-
-#promotion img{
-	width:80%;
-}
-
-/*NAVIGATION*/
-
-#navi {
-	position: absolute;
-	width: 55px;
-	height: 5px;
-	left: calc(50% - 55px/2 + 0.5px);
-	top:750px;
-}
-
-#navi a{
-	color:#3C393F;
-	text-decoration:none;
-}
-
-#navi a:first-child{
-	color: #BB3556
-}
 
 </style>
 
 <!DOCTYPE html>
-<html>
-<div id="bgx"><img src="https://i.imgur.com/UMfOiNX.png"></div>
-<div id="bgo"><img src="https://i.imgur.com/Rzutra4.png"></div>
-<div id="bgt"><img src="https://i.imgur.com/xJ1RK2f.png"></div>
-<div id="bgz"><img src="https://i.imgur.com/ykghgts.png"></div>
-<div id="bgs"><img src="https://i.imgur.com/6HENAUr.png"></div>
-
-  <div id="header">
-<img src="https://i.imgur.com/BmTMqmZ.png">
-
+<html><head>    <script src="https://kit.fontawesome.com/d9c4224b78.js" crossorigin="anonymous"></script>
+</head>
+<div id="star"><img src=space.svg width=200px></div>
+<div id="space"><img src=space.svg width=300px></div>
+<div id="topbar">
+<a href="resume.html">RESUME</a> 
+<a href="index.html">GRAPHICS</a> 
+</div>
+<div id="sidebar">
+<div class="title"> welcome to my website. </div>
+<div class="desc"> 
+<p>Hi, my name is Rachel and I'm a 4A student at the University of Waterloo. I'm currently studying Math and Chartered Professional Accountancy, but as you can see from this site I have a real passion for design as well.</p>
+<p>some of my other interests include:
+<ul><li>knitting and crocheting</li>
+<li>sushi</li>
+<li>league of legends</li>
+<li>electronic music</li></ul>
+<p>you can find me at any of the links below!</p>
 <div class="links">
-<a href="index.html">Upcoming</a>
-<a href="about.html">About</a>
-<a href="events.html">Events</a>
-<a href="team.html">Team</a>
-<a href="sponsors.html">Sponsors</a>
-<a href="contact.html">Contact</a>
+  <a href="https://www.facebook.com/rachel.shen.9693" class="facebook"><i class="fab fa-facebook-f"></i></i></a>
+  <a href="https://www.instagram.com/rayshenn/" class="instagram"><i class="fab fa-instagram"></i></i></a>
+  <a href="mailto:r9shen@edu.uwaterloo.ca" class="envelope"><i class="fas fa-envelope-open-text"></i></a>
+</p></div>
+ </div>
 </div>
-</div>
-
-  <div id="entries">
-<h1>UPCOMING</h1>
-<h2>Dragon Dance Fest</h2>
-
-<p>Donec mollis lacus in lobortis suscipit. Morbi maximus gravida turpis, in pulvinar ipsum suscipit vel. Ut eget neque ac tellus accumsan finibus. Donec sed accumsan mi. Maecenas sit amet cursus diam, vitae eleifend lacus. Aliquam ultricies porta nunc at lobortis. Maecenas ut molestie libero. Quisque elit ex, sodales et urna non, dignissim placerat ligula. Ut pellentesque ex id ipsum scelerisque, nec gravida odio malesuada. Praesent ut dolor mi.</p>
-
-<p>Donec mollis lacus in lobortis suscipit. Morbi maximus gravida turpis, in pulvinar ipsum suscipit vel. Ut eget neque ac tellus accumsan finibus. Donec sed accumsan mi. Maecenas sit amet cursus diam, vitae eleifend lacus. Aliquam ultricies porta nunc at lobortis. Maecenas ut molestie libero. Quisque elit ex, sodales et urna non, dignissim placerat ligula. Ut pellentesque ex id ipsum scelerisque, nec gravida odio malesuada. Praesent ut dolor mi.</p>
-
-<button><a href="https://www.facebook.com/events/501096950731861/">Buy tickets here!</a></button> 
-<button><a href="https://www.ticketfi.com/event/3525/dragon-dance-festival?fbclid=IwAR0iXoINCWuVLOzXiAfz_ndeMJcpewW_-Q99v9uoI2vBsEO5owRCQH2rEFI">Facebook Event</a></button>
-</div>
-<div id="promotion">
-<img src="https://i.imgur.com/ANP9DVK.jpg">
-</div>
-<div id="navi">
-<a href="upcoming.html">•</a>
-<a href="about.html">•</a>
-<a href="events.html">•</a>
-<a href="team.html">•</a>
-<a href="sponsors.html">•</a>
-<a href="contact.html">•</a>
-</div>
+<div id="content">
+<div class="samples">
+<table><tr>
+<td><a href="cra.html"><img src="cra.gif"></a>
+<h2>crazy broke asians</h2></td>
+<td><a href="pwc.html"><img src="pwc.png"></a>
+<h2>PWC recruiting posters</h2></td>
+</tr>
+<tr>
+<td><a href="nightmarket.html"><img src="nightmarket.png"></a>
+<h2>uwcsa presents: night market</h2></td>
+<td><a href="ddf.html"><img src="final.jpg"></a>
+<h2>dragon dance fest: a rave</h2></td>
+</tr></table>
+</div></div>
 </html>
